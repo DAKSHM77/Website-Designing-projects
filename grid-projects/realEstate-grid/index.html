@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+            border: 3px solid black;
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+
+
+        .headinfo {
+            border: 3px solid magenta;
+            background: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+
+        .container {
+            padding: 0px 175px;
+
+            border: 3px solid greenyellow;
+
+        }
+
+
+        .row {
+            border: 3px solid;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 40% 60%);
+
+        }
+
+
+        .col i {
+            color: #30caa0;
+        }
+
+
+        .hrow2 {
+            grid-template-columns: 30% 60%;
+            gap:40px;
+          
+            border: 3px solid green;
+            align-items: center;
+
+        }
+
+        .nav {
+            grid-template-columns: repeat(auto-fit, 150px);
+        
+        }
+
+        .space {
+            /* margin-left: 20%; */
+            text-align: right;
+        }
+
+
+
+        .row li {
+            text-align: center;
+            ;
+        }
+
+
+        .page1 {
+            border: 3px solid gold;
+
+
+
+
+        }
+
+
+        .row12 {
+            height: 140px;
+            border: 3px solid red;
+            width: 100%;
+            margin: auto;
+            position: relative;
+
+
+        }
+
+
+        .mhead {
+            font-size: 36px;
+            font-weight: 400px;
+            font-family: "Source Sans 3", sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border: 3px solid aqua;
+
+
+        }
+
+        .shead {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 20px;
+            border: 3px solid orange;
+        }
+
+
+        .smalltext {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .row1 {
+            width: 100%;
+            text-align: center;
+            width: 100%;
+            padding: 200px 0px;
+
+
+
+        }
+
+        .viewdetail {
+            width: 150px;
+            height: 43px;
+            margin-top: 20px;
+            background-color: aquamarine;
+            border: 3px solid red;
+
+        }
+
+
+
+
+        .searchbar {
+            width: 80%;
+            border: 3px solid aqua;
+            margin: auto;
+            text-align: center;
+            background-color: aquamarine;
+            padding: 15px 5px;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+
+
+        }
+
+
+
+
+        input::placeholder {
+            font-size: 12px;
+
+        }
+
+        .searchbar * {
+            margin: 20px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .searchbar input {
+            border: none;
+            width: 380px;
+            height: 40px;
+
+
+        }
+
+        .city,
+        .state {
+            border: none;
+            width: 200px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        .search {
+
+            background-color: black;
+
+        }
+
+
+        /* page2-start */
+
+        .page2 {
+            margin: 100px 0px;
+            border: 3px solid magenta;
+
+
+        }
+
+        .row2 {
+            text-align: center;
+
+
+        }
+
+        .row2 .mhead {
+            color: black;
+        }
+
+
+        .list {
+            border: 3px solid red;
+            overflow: hidden;
+            justify-content: space-between;
+            grid-template-columns: repeat(auto-fit,560px);
+            gap: 20px;
+           
+        }
+
+
+        .p1 {
+            background: url(images/p1.jpg);
+            grid-template-columns: repeat(auto-fit,50%);
+            border: 12px solid blue;
+        }
+
+        .p2 {
+            background: url(images/p2.jpg);
+        }
+
+        .p3 {
+            background: url(images/p3.jpg);
+        }
+
+        .p4 {
+            background: url(images/p4.jpg);
+        }
+
+        .p1,
+        .p2,
+        .p3,
+        .p4 {
+            height: 270px;
+            width: 100%;
+            padding: 10px;
+        }
+
+
+        .recentProperties {
+            padding-bottom: 50px;
+        }
+
+        .recentProperties .smalltext {
+            color: #000;
+        }
+
+        .saletag {
+            height: 50px;
+            width: 90px;
+            background-color: red;
+
+            color: #fff;
+            align-content: center;
+        }
+
+        .name {
+            border: 3px solid magenta;
+            width: 100%;
+            margin-top: 130px;
+            margin-bottom: 0px;
+        }
+
+        /* .price2 {
+            margin-top: 170px;
+            height: 50px;
+            align-content: center;
+            text-align: center;
+            width: 150px;
+            margin-left: 100px;
+            border: 3px solid green;
+            background-color: #30caa0
+        } */
+
+        .col img {
+            width: 500px;
+            height: 370px;
+            /* margin-left: 25px; */
+
+
+        }
+
+
+        .col i {
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+        }
+
+        .a {
+            border: 3px solid red;
+            /* height: 100%; */
+        }
+
+        .right {
+            border: 3px solid red;
+            height: 100%;
+
+        }
+
+        .right
+        /* page2-end */
+
+
+
+
+        /* page3-start */
+
+
+
+        .page3 {
+            background: url(images/service-bg.jpg);
+
+            background-size: cover;
+        }
+
+
+        .page3 p {
+            color: #fff;
+        }
+
+        .row3 {
+
+            background-size: cover;
+            padding-bottom: 100px;
+            border: 10px solid aqua;
+            grid-template-columns:repeat(auto-fit, 350px);
+
+        }
+
+
+
+        .img {
+           
+          object-fit: cover;
+           
+
+        }
+
+      
+        
+
+
+
+        .info {
+            border: 3px solid red;
+            padding-left: 80px;
+            padding: 100px 0px;
+
+            background: green;
+
+        }
+
+
+        .part1 {
+            grid-template-columns: 2fr 8fr;
+            padding-bottom: 10px;
+            gap: 10px;
+            background: darkcyan;
+        }
+
+        .info>p {
+            padding-bottom: 30px;
+        }
+
+        .sicon {
+            margin: auto;
+
+
+        }
+
+        .sicon i {
+            padding: 25px 8px;
+            background-color: #30caa0;
+            border-radius: 50%;
+
+
+        }
+
+        .info i {
+            height: 60px;
+            width: 60px;
+
+        }
+
+        /* page3-end */
+
+
+
+        /* page4-start */
+
+
+
+
+        .page4 * {
+            color: #000;
+
+        }
+
+
+        .row4 {
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: center;
+            gap: 20px;
+            background: green;
+
+
+        }
+
+        .listings {
+            text-align: center;
+        }
+
+
+
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 30px;
+
+
+
+
+        }
+
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item i,
+        .details i {
+
+            color: #30caa0;
+        }
+
+        .price2 {
+            background: #30caa0;
+            color: #fff;
+            height: 53px;
+            text-align: center;
+
+        }
+
+
+        .card {
+
+            /* margin: 20px auto; */
+            background: red;
+            text-align: center;
+            /* border: 1px solid #707070; */
+
+
+
+        }
+
+        .card * {
+            padding: 5px 0px;
+        }
+
+
+
+        .for-sale {
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            width: 100px;
+        }
+
+        .header,
+        .header2,
+        .header3,
+        .header4,
+        .header5,
+        .header6 {
+            background: url(images/11.jpg);
+            height: 250px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .header2 {
+            background: url(images/22.jpg);
+
+        }
+
+        .header3 {
+            background: url(images/33.jpg);
+
+        }
+
+        .header4 {
+            background: url(images/4.jpg);
+
+        }
+
+        .header5 {
+            background: url(images/5.jpg);
+
+        }
+
+
+        .header6 {
+            background: url(images/6.jpg);
+
+        }
+
+
+
+
+
+
+
+
+        /* page4-end */
+
+
+
+        /* page5-start */
+
+        .page5 {
+            padding-bottom: 100px;
+        }
+
+        .col5 {
+            background: #f7f7f7;
+
+        }
+
+        .row5 {
+            padding: 100px 0px;
+            text-align: center;
+
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 253px);
+            justify-content: space-evenly;
+            gap: 20px;
+
+
+
+        }
+
+        .row5 img {
+            width: 100%;
+            height: 194px
+        }
+
+        .row5 .mhead,
+        .row5 .smalltext {
+            color: #000;
+
+        }
+
+        .lookingproperty .mhead,
+        .lookingproperty .smalltext {
+            color: #000;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* pagae5-end */
+
+
+        /* page6-start */
+
+        .row6{
+            grid-template-columns: 50% 50%;
+            
+            gap: 10px;
+             border: 3px solid gold;
+        }
+
+
+        .row61{
+            width: 100%;
+             height: 570px;
+            border: 3px solid red;
+            grid-template-columns: repeat(auto-fit, 576px)
+        }
+
+        .row62{
+           background: url(images/old.jpg);
+           height: 570px;
+              background-size: cover;
+              background-position: center;
+            border: 3px solid magenta;
+        }
+
+
+        .img1{
+            background: url(images/br.jpg);
+             background-size: cover;
+              background-position: center;
+            width:100%;
+            width: 567px;
+            height: 280px;
+        }
+        
+        .img2{
+            background: url(images/triangle.jpg);
+             background-size: cover;
+              background-position: center;
+              /* margin-top:290px; */
+         
+         height: 270px;
+            width: 270px; 
+        }
+        .img3{
+            background: url(images/sc.jpg);
+              background-size: cover;
+              background-position: center;
+              height: 270px;
+            width: 270px;
+        }
+
+        .row62{
+            width: 560px;
+        }
+
+        .popularplaces *{
+            color: #000;
+            text-align: center;
+        }
+        
+
+
+     
+
+
+
+
+
+        /* page6-end */
+
+
+        /* page7-start */
+
+
+
+        .page7 {
+            background: url(images/review-bg.jpg);
+            padding: 100px 175px;
+            text-align: center;
+            background-size: cover;
+
+        }
+
+
+
+
+
+        .name {
+            color: #fff;
+        }
+
+
+        .image7 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: url(images/reviewer.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+
+        }
+
+
+
+
+
+
+
+
+
+        /* page7-end */
+
+
+        /* page8-start */
+
+
+        .page8 {
+            padding: 100px 175px;
+            position: relative;
+            padding-bottom: 150px;
+
+        }
+
+
+        .page8 * {
+            color: #000;
+
+        }
+
+        .row8 {
+
+            grid-template-columns: repeat(auto-fit, 370px);
+            gap: 20px;
+            justify-content: space-between;
+           
+           
+
+
+
+        }
+
+
+        .head {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+
+        .brands {
+            width: 76.8%;
+
+            background-color: #30caa0;
+            grid-template-columns: repeat(auto-fit, 200px);
+            justify-content: space-evenly;
+            gap: 10px;
+            padding: 20px;
+            position: absolute;
+            bottom: -50px;
+            overflow: hidden;
+
+        }
+
+
+        .brands img {
+            height: 66px;
+            width: 127px;
+
+        }
+
+
+        /* page8-end */
+
+
+
+        /* footer-start */
+
+
+        .footer {
+            background: url(images/footer-bg.jpg);
+            background-size: cover;
+            padding: 150px 175px;
+        }
+
+        .footer * {
+            color: #fff;
+        }
+
+
+        .footer-row {
+            grid-template-columns: repeat(auto-fit, 257px);
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 30px;
+        }
+
+
+        .about i {
+            padding-right: 10px;
+        }
+
+        .about * {
+            margin: 10px 0px;
+            color: #fff;
+        }
+
+        .city {
+            grid-template-columns: repeat(auto-fit, 100px);
+            justify-content: left;
+
+
+        }
+
+        .city * {
+            line-height: 2;
+            color: #fff;
+
+        }
+
+        .footer-row .mhead {
+            font-size: 30px;
+        }
+
+        .footerip {
+            margin-top: 20px;
+        }
+
+        .footerip input {
+            width: 80%;
+            height: 40px;
+            padding: 10px 18px;
+            padding-right: 50px;
+        }
+
+        .footerip button {
+            width: 20%;
+            padding: 8px;
+            background-color: #30caa0;
+        }
+
+        .contactus * {
+
+            padding: 5px;
+        }
+
+
+
+
+
+
+        /* footer-end */
+
+
+        @media(max-width:1125px) {
+
+
+            .container {
+                padding: 0px 0px;
+            }
+
+
+             .searchbar {
+            width: 100%;
+           
+
+
+        }
+
+        .brands{
+            width: 100%;
+           
+        }
+
+
+
+        .row8{
+             margin-bottom: 250px;
+        }
+
+        
+        
+        .footer{
+            padding: 150px 0px;
+        }
+
+
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="headinfo container">
+
+        <div class="headfirst">
+
+            <ul class="row">
+
+                <div class="col">
+                    <i class="fa-solid fa-phone" style="color: #30caa0;"></i> (+88) 666 121 4321
+
+                    <i class="fa-solid fa-envelope" style="color: #30caa0;"></i>info.leramiz@colorlib.com
+
+                </div>
+                <!-- <li></li> -->
+
+                <div class="col space">
+                    <i class="fa-brands fa-facebook-f" style="color: #30caa0;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #30caa0;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #30caa0;"></i>
+                    <i class="fa-brands fa-pinterest" style="color: #30caa0;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #30caa0;"></i>
+
+
+                    <i class="fa-solid fa-circle-user" style="color: #30caa0;"></i> Register
+                    <i class="fa-solid fa-arrow-right-to-bracket" style="color: #30caa0;"></i> Login
+                </div>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+            <div class="navbar">
+                <div class="hrow2 row headsec">
+
+                    <div class="heading navi">
+                        <img src="https://preview.colorlib.com/theme/leramiz/img/logo.png.webp" alt="">
+                    </div>
+
+                    <div class="nav navi ">
+
+                        <ul class="row nav">
+                            <li class="c">HOME</li>
+                            <li class="c">FEATURED LISTING</li>
+                            <li class="c">ABOUT US</li>
+                            <li class="c">PAGES</li>
+                            <li class="c">BLOG</li>
+                            <li class="c">CONTACT</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <!-- page1-start -->
+
+
+        <div class="page1 container">
+
+            <div class="row1 ">
+
+
+                <div class="mhead">find your place with our local life style</div>
+
+                <p class="shead">Search real estate property records, houses, condos, land and more on leramiz.com®.
+                    <br>
+                    Find property info from the most comprehensive source data</p>
+
+                <button class="viewdetail shead">View Detail</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="row12">
+
+        <div class="searchbar">
+            <input type="text" placeholder="Enter street naem,address number or keyword">
+            <select class="city" id="">
+                <option value="">city</option>
+
+            </select>
+
+            <select class="state" name="" id="">
+                <option value="">state</option>
+            </select>
+
+            <button class="search shead viewdetail">SEARCH</button>
+        </div>
+    </div>
+
+
+    <!-- page1-end -->
+
+
+
+
+    <!-- page2-start -->
+
+
+    <div class="page2 container">
+
+
+        <div class="row2">
+
+
+            <div class="recentProperties">
+
+                <div class="mhead">RECENT PROPERTIES</div>
+
+                <p class="smalltext">Discover how much the latest properties have been sold for</p>
+
+            </div>
+
+            <div class="list row">
+
+
+
+                <div class="p1 row">
+
+                    <div class="a">
+
+                        <p class="saletag ">FOR SALE</p>
+                        <div class="shead name">176 Kingsberry, Dr Anderson</div>
+
+                        <div class="smalltext">
+
+                            <i class="fa-solid fa-location-dot " style="color: #707070;;"></i> Rochester, NY 14626
+                        </div>
+                    </div>
+
+
+                    <div class=" right">
+
+                        <div class=" shead">$3000/month</div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="p1 row p2">
+
+                    <div class="a">
+
+                        <p class="saletag ">FOR SALE</p>
+                        <div class="shead name">176 Kingsberry, Dr Anderson</div>
+
+                        <div class="smalltext">
+
+                            <i class="fa-solid fa-location-dot " style="color: #707070;;"></i> Rochester, NY 14626
+                        </div>
+                    </div>
+
+
+                    <div class=" right">
+
+                        <div class=" shead">$3000/month</div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="p1 row p3">
+
+                    <div class="a">
+
+                        <p class="saletag ">FOR SALE</p>
+                        <div class="shead name">176 Kingsberry, Dr Anderson</div>
+
+                        <div class="smalltext">
+
+                            <i class="fa-solid fa-location-dot " style="color: #707070;;"></i> Rochester, NY 14626
+                        </div>
+                    </div>
+
+
+                    <div class=" right">
+
+                        <div class=" shead">$3000/month</div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="p1 row p4">
+
+                    <div class="a">
+
+                        <p class="saletag ">FOR SALE</p>
+                        <div class="shead name">176 Kingsberry, Dr Anderson</div>
+
+                        <div class="smalltext">
+
+                            <i class="fa-solid fa-location-dot " style="color: #707070;;"></i> Rochester, NY 14626
+                        </div>
+                    </div>
+
+
+                    <div class=" right">
+
+                        <div class=" shead">$3000/month</div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- page2-end -->
+
+
+
+    <!-- page3-start -->
+
+
+    <div class="page3 container">
+
+
+        <div class="row3 row">
+
+            <div class="img"><img src="images/service.jpg" alt="" width="100%" height="100%"></div>
+
+            <div class="info">
+
+                <div class="mhead">OUR SERVICES</div>
+
+                <p>we provide the perfect service for</p>
+
+
+                <div class="services">
+
+                    <div class="part1 row">
+
+                        <div class="sicon">
+                            <i class="fa-solid fa-comments fa-2xl" style="color: #fff;"></i>
+                        </div>
+
+                        <div class="stext">
+                            <p>Consultant Service</p>
+                            <div class="smalltext">In Aenean purus, pretium sito amet sapien denim consectet sed urna
+                                placerat sodales magna leo.</div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="part1 row">
+
+                        <div class="sicon">
+                            <i class="fa-solid fa-comments fa-2xl" style="color: #fff;"></i>
+                        </div>
+
+                        <div class="stext">
+                            <p>Consultant Service</p>
+                            <div class="smalltext">In Aenean purus, pretium sito amet sapien denim consectet sed urna
+                                placerat sodales magna leo.</div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="part1 row">
+
+                        <div class="sicon">
+                            <i class="fa-solid fa-comments fa-2xl" style="color: #fff;"></i>
+                        </div>
+
+                        <div class="stext">
+                            <p>Consultant Service</p>
+                            <div class="smalltext">In Aenean purus, pretium sito amet sapien denim consectet sed urna
+                                placerat sodales magna leo.</div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <!-- page3-end -->
+
+
+
+
+    <!-- page4-start  -->
+
+
+    <div class="page4 container">
+
+
+        <div class="row4">
+
+
+            <div class="heading">
+
+                <div class="listings">
+
+                    <div class="mhead">Featured Listings</div>
+
+                    <div class="smalltext">Browse houses and flats for sale and to rent in your area</div>
+
+                </div>
+
+                <div class="row4 row">
+
+
+                    <div class="card">
+                        <div class="header">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="header2">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="header3">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card">
+                        <div class="header4">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="header5">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="header6">
+
+                            <div class="for-sale">FOR SALE</div>
+                        </div>
+
+
+                        <div class="details">
+                            <div>1963 S Crescent Heights Blvd</div>
+                            <div><i class="fa-solid fa-location-dot fa-lg"></i> Los Angeles, CA 90034</div>
+                        </div>
+
+
+
+                        <div class="info-grid">
+
+
+                            <div class="info-item"><i class="fa-brands fa-windows fa-lg"></i> 800 Sq ft</div>
+                            <div class="info-item"><i class="fa-solid fa-car fa-lg"></i> 2 Garages</div>
+                            <div class="info-item"><i class="fa-solid fa-bed fa-lg"></i> 10 Bedrooms</div>
+                            <div class="info-item"><i class="fa-solid fa-bath fa-lg"></i> 6 Bathrooms</div>
+
+                            <div class="info-item"><i class="fa-solid fa-user fa-lg"></i> Agent: Tony Holland</div>
+                            <div class="info-item"><i class="fa-solid fa-clock fa-lg"></i>Listed 1 day ago</div>
+                        </div>
+
+                        <div class="2">
+                            <p>$1,200,000/month</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- page4-end -->
+
+
+
+    <!-- page5-lp-start -->
+
+    <div class="page5 container">
+
+        <div class="lookingproperty">
+
+            <div class="mhead">LOOKING PROPERTY</div>
+
+            <div class="smalltext">What kind of property are you looking for? We will help you</div>
+
+
+
+
+            <div class="row row5">
+
+                <div class="one">
+                    <img src="images/a.jpg" alt="">
+                    <p>Appartment for Rent</p>
+                </div>
+                <div class="one">
+                    <img src="images/b.jpg" alt="">
+                    <p>family Home</p>
+                </div>
+                <div class="one">
+                    <img src="images/c.jpg" alt="">
+                    <p>resort Villas</p>
+                </div>
+                <div class="one">
+                    <img src="images/e.jpg" alt="">
+                    <p>Office Building</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- page5-lp-end -->
+
+
+
+
+
+    <!-- page6-start -->
+
+    <div class="page6 container">
+
+        <div class="page6info">
+
+            <div class="popularplaces">
+                <div class="mhead">POPULAR PLACES</div>
+                <div class="smalltext">We understand the value and importance of place</div>
+            </div>
+
+
+            <div class="row6 row">
+
+
+                <div class="row61 row">
+
+                    <div class="img1">etesgsg</div>
+
+                    <div class="img2">fhfdhdh</div>
+
+                    <div class="img3">fdshfd</div>
+
+                </div>
+
+                <div class="row62">
+
+                    <div class="img4">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- page6-end -->
+
+
+
+    <!-- page7-start -->
+
+    <div class="page7 container">
+
+
+        <div class="row7">
+
+            <div class="rating">
+                <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            </div>
+
+
+            <div class="review">
+
+                <p class="shead reviewtext">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus rem
+                    obcaecati, quis iusto voluptatum enim aspernatur tenetur. Fuga iste aliquam deleniti unde illo,
+                    animi tenetur corrupti illum odio architecto?"</p>
+
+                <div class="name">
+                    <h2>Stacy Mc Neeley</h2>
+                </div>
+                <div class="smalltext">CEP's Director</div>
+
+            </div>
+
+
+            <div class="image7">
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- page7-end -->
+
+
+
+
+
+    <!-- page8-start -->
+
+
+    <div class="page8 container">
+
+        <div class="head">
+            <div class="mhead">LOOKING PROPERTY</div>
+
+            <div class="smalltext">What kind of property are you looking for? We will help you</div>
+        </div>
+
+        <div class="row8 row">
+
+            <div class="col8">
+                <img src="images/1.jpg" alt="" width="100%">
+                <h3>Housing confidence hits record high as s skyrocket</h3>
+                <i class="fa-solid fa-circle-user" style="color: #30caa0;"></i> Amanda Seyfried <i
+                    class="fa-solid fa-clock fa-lg" style="color: #30caa0"></i> 25 Jun 2015
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae itaque excepturi rem neque
+                    obcaecati, similique enim, aut optio et ex, ipsa aliquid veritatis? Reiciendis asperiores illum
+                    deleniti magni. Odio, quaerat?-
+                </p>
+            </div>
+
+
+            <div class="col8">
+                <img src="images/2.jpg" alt="" width="100%">
+                <h3>Housing confidence hits record high as s skyrocket</h3>
+                <i class="fa-solid fa-circle-user" style="color: #30caa0;"></i> Amanda Seyfried <i
+                    class="fa-solid fa-clock fa-lg" style="color: #30caa0"></i> 25 Jun 2015
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae itaque excepturi rem neque
+                    obcaecati, similique enim, aut optio et ex, ipsa aliquid veritatis? Reiciendis asperiores illum
+                    deleniti magni. Odio, quaerat?-
+                </p>
+            </div>
+
+
+            <div class="col8">
+                <img src="images/3.jpg" alt="" width="100%">
+                <h3>Housing confidence hits record high as s skyrocket</h3>
+                <i class="fa-solid fa-circle-user" style="color: #30caa0;"></i> Amanda Seyfried <i
+                    class="fa-solid fa-clock fa-lg" style="color: #30caa0"></i> 25 Jun 2015
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae itaque excepturi rem neque
+                    obcaecati, similique enim, aut optio et ex, ipsa aliquid veritatis? Reiciendis asperiores illum
+                    deleniti magni. Odio, quaerat?-
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="brands row">
+
+
+            <img src="images/goodfood.png" alt="">
+
+
+
+            <img src="images/prime8.png" alt="">
+
+
+
+            <img src="images/amaris.png" alt="">
+
+
+            <img src="images/anz.png" alt="">
+
+
+            <img src="images/trimount.png" alt="">
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- page8-end -->
+
+
+    <!-- footer-start -->
+
+    <div class="footer container">
+
+        <div class="footer-row row">
+
+
+            <div class="about">
+
+                <img src="images/logo.png" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero, veniam officiis repellat eum
+                    sit quam explicabo praesentium modi suscipit illo amet id assumenda ad, doloribus dolorum!
+                    Repellendus, harum magnam.</p>
+
+                <i class="fa-brands fa-facebook-f" style="color: #fff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                <i class="fa-brands fa-pinterest" style="color: #fff;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #fff;"></i>
+
+            </div>
+
+
+            <div class="contactus">
+
+                <div class="mhead">CONTACT US</div>
+
+                <p> <i class="fa-solid fa-location-dot fa-lg" style="color: #fff;"></i> 3711-2880 Nulla St, Mankato,
+                    Mississippi</p>
+
+                <p> <i class="fa-solid fa-phone" style="color: #fff;"></i> (+88) 666 121 4321</p>
+
+                <p> <i class="fa-solid fa-envelope" style="color: #30caa0;"></i> info.leramiz@colorlib.com</p>
+
+                <p> <i class="fa-solid fa-clock fa-lg" style="color: #30caa0"></i> Mon - Sat, 08 AM - 06 PM </p>
+
+            </div>
+
+
+            <div class="popularplaces">
+
+                <div class="mhead">POPULAR PLACES</div>
+
+                <div class="row city">
+
+                    <div class="col1">
+                        Florida
+                        New York
+                        Washington
+                        Los Angeles
+                        Chicago
+                    </div>
+
+                    <div class="col2">
+                        St Louis
+                        Jacksonville
+                        San Jose <br>
+                        San Diego
+                        Houston
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="newsletter">
+
+                <div class="mhead">NEWSLETTER</div>
+
+                <p>Subscribe your email to get the latest news and new offer also discount</p>
+
+                <div class="footerip">
+                    <input type="text" placeholder="Email address"><button><i class="fa-solid fa-paper-plane fa-xl"
+                            style="color: #ffffff;"></i></button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

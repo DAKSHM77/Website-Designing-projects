@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      text-decoration: none;
+      font-family: "Work Sans", sans-serif;
+      /* border: 3px solid #000; */
+    }
+
+    .container{
+      padding: 0px 100px;
+    }
+
+
+    h1 {
+      font-size: 36px;
+
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* nav-start */
+
+    .nav {
+      /* border: 3px solid black; */
+      padding: 40px;
+      justify-content: space-between;
+    }
+
+    .n1 {
+      /* border: 3px solid red; */
+      flex-basis: 300px;
+    }
+
+    .n1 h1{
+      color: #fff;
+    }
+
+    .n2 {
+      /* border: 3px solid magenta; */
+      flex-basis: 560px;
+      align-content: center;
+
+    }
+
+
+
+    .n2 ul li {
+      /* border: 3px solid green; */
+      color: #fff;
+      font-weight: 800;
+      font-size: 20px;
+      flex-basis: 110px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+    }
+
+    .n3 {
+      /* border: 3px solid orange; */
+
+    }
+
+    .n3 img {
+      height: 45px;
+      width: 45px;
+    }
+
+    .blog {
+      position: relative;
+      ;
+    }
+
+    .blognav {
+      position: absolute;
+      top: 50px;
+      width: 150px;
+      opacity: 0;
+      transition: .5s;
+    }
+
+
+
+    .blog:hover .blognav {
+      opacity: 1;
+    }
+
+    .blog2 {
+      position: relative;
+    }
+
+
+
+    .blognav2 {
+      width: 150px;
+      top: 0px;
+      left: 100%;
+      position: absolute;
+
+      opacity: 0;
+      transition: .5s;
+    }
+
+
+
+    .blog2:hover .blognav2 {
+      opacity: 1;
+    }
+
+
+
+
+
+
+    .search {
+     
+      align-content: center;
+
+    }
+
+    .search img {
+      align-content: center;
+
+    }
+
+    .moon {
+
+      padding: 10px 8px;
+    }
+
+
+
+
+
+
+
+    /* nav-end */
+
+    .page1{
+      background: url(images/banner2.jpg)  , rgba(0,0,0,0.90);
+      background-size: cover;
+    }
+
+
+
+    .circle1 {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      text-align: center;
+      align-content: center;
+      border-radius: 50px;
+      margin-right: 10px;
+
+    }
+
+    .reqaquote {
+      height: 45px;
+      width: 200px;
+      margin: 0px 20px;
+      border-radius: 10px;
+      background-color: #ff8800;
+      color: #fff;
+      font-weight: 500;
+    }
+
+
+    .text{
+     
+      align-content: center;
+    }
+
+    .text h2{
+      border: none;
+      
+    }
+
+
+    .firsttext{
+      width: 900px;
+     padding: 50px 0px;
+     color: #fff;
+     
+    
+
+    }
+
+    .firsttext h1{
+      font-size: 60px;
+    }
+
+   .text{
+    margin-right:20px ;
+   }
+
+
+   .firsttext h1{
+    margin: 40px 0px;
+   }
+
+
+   .firsttext p{
+    margin-bottom: 40px;
+   }
+
+
+  </style>
+
+
+
+  <div class="page1 container">
+
+    <div class="nav row">
+
+      <div class="n1">
+        <h1>Sectt<i class="fa-solid fa-helmet-safety fa-2xl" style="color: #ff8800;"></i>re</h1>
+      </div>
+
+      <div class="n2">
+        <ul class="row list">
+          <li>Home</li>
+          <li>About</li>
+          <li class="blog">Blog <i class="fa-solid fa-caret-down fa-lg" style="color: #fff;"></i>
+            <ul class="blognav">
+              <li>Blog post</li>
+              <li class="blog2">Blog single
+
+                <ul class="blognav2">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Pages</li>
+          <li>contact</li>
+
+        </ul>
+      </div>
+
+      <div class="n3">
+
+        <div class="search row">
+          <img src="images/search.png" alt="">
+          <div class="requrestaquote"><button class="reqaquote">Request a Quote</button></div>
+          <div class="moon"><i class="fa-regular fa-moon fa-2xl" style="color: #000;"></i></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="firsttext">
+
+      <p>INDUSTRIAL</p>
+      <h1>Great Technology and Best Services</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium consequuntur soluta excepturi
+        doloremque fugiat blanditiis dolor nihil harum, deleniti, ipsa, amet beatae architecto eius voluptate magni
+        officia facere culpa.</p>
+
+
+      <div class="features row">
+        <div class="circle1"><i class="fa-solid fa-box fa-2xl" style="color: #ff7b00;"></i></div>
+        <div class="text"> consectetur
+          <h2>Production</h2>
+        </div>
+
+         <div class="circle1"><i class="fa-solid fa-city fa-2xl" style="color: #ffa200;"></i></div>
+        <div class="text"> consectetur
+          <h2>Production</h2>
+        </div>
+
+         <div class="circle1"><i class="fa-solid fa-sitemap fa-2xl" style="color: #ff9500;"></i></div>
+        <div class="text"> consectetur
+          <h2>Production</h2>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Deals</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .title-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .title-section h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .title-section p {
+      color: #666;
+      font-size: 16px;
+    }
+    .card-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 23%;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .reviews {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 6px;
+    }
+    .reviews::before {
+      content: "★★★★★ ";
+      color: #ffc107;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .price {
+      font-size: 15px;
+      color: #aaa;
+      text-decoration: line-through;
+    }
+    .discounted {
+      font-size: 18px;
+      color: orange;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title-section">
+      <h2>Featured Deals</h2>
+      <p>Praesent ut ligula non mi curabitur at lacus elit</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="sofa.jpg" alt="Sofa">
+        <div class="reviews">(0 Reviews)</div>
+        <div class="card-title">Decor For Drowing</div>
+        <div class="price">$50.00</div>
+        <div class="discounted">$35.00</div>
+      </div>
+      <div class="card">
+        <img src="lounge-chair.jpg" alt="Lounge Chair">
+        <div class="reviews">(0 Reviews)</div>
+        <div class="card-title">Decor For Drowing</div>
+        <div class="price">$50.00</div>
+        <div class="discounted">$35.00</div>
+      </div>
+      <div class="card">
+        <img src="wardrobe.jpg" alt="Wardrobe">
+        <div class="reviews">(0 Reviews)</div>
+        <div class="card-title">Decor For Drowing</div>
+        <div class="price">$50.00</div>
+        <div class="discounted">$35.00</div>
+      </div>
+      <div class="card">
+        <img src="stool.jpg" alt="Stool">
+        <div class="reviews">(0 Reviews)</div>
+        <div class="card-title">Decor For Drowing</div>
+        <div class="price">$50.00</div>
+        <div class="discounted">$35.00</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

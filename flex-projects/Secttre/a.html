@@ -1,0 +1,39 @@
+Can't create, edit or upload … Not enough storage.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let obj1 = 
+        {
+            10:"RameshBhai",
+            y:45,
+            "x":"Accountant",
+            'z':"ty"
+        }
+
+        // document.write(obj1.y)
+        for(i in obj1)
+        {
+            // document.write(obj1[i] + "<br>");
+            document.write(i + "=>" + obj1[i] + "<br>")
+        }
+
+        for(val of obj1){
+            document.write(val)
+        } // obj is not iterable(error)
+
+        document.write(obj1['y'])
+        document.write(obj1.y)
+        console.log(obj1[10])
+
+
+    </script>
+    
+</body>
+</html>

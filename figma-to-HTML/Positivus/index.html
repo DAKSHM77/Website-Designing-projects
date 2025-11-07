@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            /* border: 3px solid black; */
+            font-family: "Space Grotesk", sans-serif;
+            /* border:none !important; */
+
+
+        }
+
+        .container {
+            padding: 0px 100px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 0px;
+          
+        }
+
+        .bighead {
+            font-size: 60px;
+            /* display: inline-block; */
+        }
+
+        .bigtext {
+            font-size: 40px;
+        }
+
+        .h3text {
+            font-size: 30px;
+            display: inline-block;
+        }
+
+        .medtext {
+            font-size: 20px;
+            margin: 35px 0px;
+        }
+
+        .smalltext {
+            font-size: 18px;
+        }
+
+        .whitetext {
+            color: #fff;
+        }
+
+
+        .greenbg {
+            background-color: #B9FF66;
+        }
+
+        .inlineblock {
+            display: inline-block;
+            margin: 0px;
+
+        }
+
+
+
+        /* nav-start */
+
+
+        .nav1 {
+            flex-basis: 250px;
+            /* border: 3px solid red; */
+        }
+
+        .nav2 {
+            flex-basis: 600px;
+            flex-grow: 1;
+            padding-left: 250px;
+            /* border: 3px solid yellow; */
+
+        }
+
+        .nav2 ul {
+            /* height: 65px; */
+            /* border: 3px solid magenta; */
+            align-content: center;
+            margin-left: 0px;
+
+
+        }
+
+        .nav {
+            flex-basis: 146px;
+            justify-content: right;
+            align-content: center;
+            text-align: center;
+            /* border: 1px solid #000; */
+            font-size: 20px;
+            
+
+        }
+
+        .nav button {
+
+            height: 45px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .bars {
+           align-content: center;
+            display: none;
+            padding-left: 30%;
+        }
+
+
+
+        /* nav-end */
+
+        /* page1-start */
+
+
+
+
+
+        .row1 {
+            justify-content: space-between;
+            /* border: 3px solid magenta; */
+            margin: 70px 0px;
+        }
+
+
+        .col11 {
+            flex-basis: 531px;
+            /* border: 3px solid red; */
+            background-color: #F3F3F3;
+        }
+
+
+
+        .col11 * {
+            padding: 5px;
+
+        }
+
+        .col12 {
+            flex-basis: 600px;
+            /* border: 3px solid red; */
+        }
+
+        .bookconsult {
+            height: 68px;
+            width: 264px;
+            background-color: #000;
+            border-radius: 10px;
+            color: white;
+        }
+
+
+
+        /* page1-end */
+
+
+        /* companies-start */
+
+        .companies {
+            margin-bottom: 100px
+        }
+
+        .crow {
+            flex-basis: 124px;
+            justify-content: space-evenly;
+            padding: 0px;
+        }
+
+        .crow img {
+            height: 48px;
+        }
+
+
+
+        /* companies-end */
+
+        /* page2-start */
+
+        .page2 {
+            padding-bottom: 100px;
+        }
+
+        .row21 {
+            gap: 20px;
+        }
+
+
+        .col21 {
+            /* border: 3px solid red; */
+            flex-basis: 178px;
+
+        }
+
+        .col22 {
+            flex-basis: 600px;
+
+        }
+
+
+
+
+
+
+
+
+        .row22 {
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+
+        .card1 {
+            background-color: #F3F3F3;
+            padding: 15px;
+            /* border: 3px solid red; */
+            flex-basis: 600px;
+
+            border-radius: 20px;
+
+        }
+
+        .part1 {
+            width: 221px;
+        }
+
+        .part1 img {
+            margin-top: 50px;
+        }
+
+        .part2 img {
+            width: 210px;
+            height: 170px;
+        }
+
+        .markgreen {
+            background-color: #B9FF66;
+        }
+
+        .markwhite {
+            background-color: #fff;
+        }
+
+        .cardrow {
+            justify-content: space-evenly;
+        }
+
+
+        .card2 {
+            background-color: #B9FF66;
+
+        }
+
+        .card3 {
+            background-color: #191A23;
+        }
+
+
+
+
+        .thingstext {
+            flex-basis: 500px;
+
+
+            /* border: 3px solid red; */
+        }
+
+        .things {
+            padding: 15px;
+            background-color: #F3F3F3;
+            /* border: 3px solid gold; */
+            border-radius: 40px;
+            justify-content: space-evenly;
+
+        }
+
+        .things * {
+            margin: 4px 0px;
+
+
+        }
+
+        .thingsimg {
+            flex-basis: 359px;
+
+
+        }
+
+        .thingsimg img {
+            width: 359px;
+            /* height: 394.27px; */
+        }
+
+        .proposal {
+            width: 288px;
+            height: 68px;
+            background-color: #000;
+            border-radius: 20px;
+        }
+
+
+
+
+        /* page2-end */
+
+
+        /* page3-start */
+
+        .page3 {
+            margin-bottom: 100px;
+        }
+
+        .row3 {
+            margin-bottom: 50px;
+        }
+
+
+
+        .col32 {
+            /* border: 3px solid magenta; */
+            align-content: center;
+        }
+
+        .row32 {
+
+            padding: 50px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50px;
+        }
+
+        .col33 {
+            flex-basis: 370px;
+            padding: 0px 30px;
+
+        }
+
+        .col31 {
+            flex-basis: 312px;
+            /* border: 10px solid gold; */
+        }
+
+        .rtborder {
+            border-right: 1px solid #fff;
+        }
+
+        .col33 * {
+            padding: 3px;
+        }
+
+        .col33 img {
+            margin-top: 10px;
+            /* width: 140px;
+            height: 28px; */
+
+        }
+
+
+        /* page3-end */
+
+        /* page4-start */
+
+        .page4 {
+            margin-bottom: 100px;
+        }
+
+        .row41 {
+            margin-bottom: 50px;
+        }
+
+        .col4 {
+            flex-basis: 350px;
+            /* border: 3px solid red; */
+        }
+
+        .col1 {
+            padding: 37px;
+            border-radius: 40px;
+            /* border: 3px solid red; */
+            margin-bottom: 30px;
+        }
+
+        .col1 img {
+            width: 58px;
+            height: 58px;
+            margin-left: 60%;
+        }
+
+        .headno {
+
+
+            border-bottom: 1px solid;
+            position: relative;
+        }
+
+        .special {
+            padding-bottom: 30px;
+        }
+
+        .text4 {
+            padding-top: 30px;
+        }
+
+        .minusbutton {
+            position: absolute;
+            right: 1px;
+        }
+
+        /* page4-end */
+
+
+        /* .page5-start */
+
+        .page5 {
+            margin-bottom: 100px;
+        }
+
+
+        .col511 {
+            flex-basis: 150px;
+        }
+
+        .col51 {
+            margin-bottom: 50px;
+        }
+
+        .col52 {
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+
+        .col521 {
+            padding: 35px;
+            /* border: 3px solid red; */
+            flex-basis: 387px;
+            border-radius: 40px;
+            height: 331px;
+        }
+
+        .first {
+            padding-bottom: 28px;
+            /* border: 3px solid green; */
+            position: relative;
+        }
+
+
+
+        .photo {
+            width: 97.82px;
+            height: 97.82px;
+        }
+
+        .text5 {
+            border: 3px solid moccasin;
+            padding-top: 38px;
+            position: relative;
+            width: 170px;
+
+        }
+
+        .text5 * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .seeteam {
+            width: 269px;
+            height: 68px;
+
+        }
+
+        .row5b {
+            text-align: right;
+        }
+
+        .lin {
+
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+
+        /* .page5-end */
+
+
+        /* page6-start */
+
+        .page6 {
+            margin-bottom: 100px;
+        }
+
+
+        .row61 {
+            padding-bottom: 50px;
+        }
+
+        .reviews {
+            background-color: #191A23;
+            width: 100%;
+            padding: 40px 0px;
+
+        }
+
+        .reviews img {
+            width: 100%;
+        }
+
+
+        .col61 {
+            flex-basis: 250px;
+        }
+
+        .col62 {
+            align-content: center;
+        }
+
+
+        /* page6-end */
+
+
+        /* page7-start */
+
+
+        .page7 {
+            background-color: #F3F3F3;
+            overflow: hidden;
+            margin-bottom: 100px;
+        }
+
+
+        .form {
+            justify-content: space-between;
+            padding: 35px;
+            padding-right: 0px;
+        }
+
+        .fcol1 {
+            flex-basis: 556px;
+            /* border: 3px solid red; */
+            
+        }
+
+        .fcol2 {
+            flex-basis: 245px;
+
+
+        }
+
+
+
+        .fcol1 input {
+            accent-color: #B9FF66;
+
+        }
+
+        .fcol1 textarea {
+            border-radius: 30px;
+            margin-bottom: 40px;
+        }
+
+        .gap {
+            margin-left: 20px;
+        }
+
+        .textip {
+            /* border: 3px solid red; */
+            width: 70%;
+            height: 59px;
+            border-radius: 20px;
+        }
+
+        .radioip {
+            margin-bottom: 40px;
+        }
+
+        .textip {
+            margin-bottom: 25px;
+        }
+
+        textarea {
+            margin-bottom: 50px;
+        }
+        
+        input{
+            padding-left: 20px;
+        }
+
+        input::placeholder {
+            padding: 20px 30px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        textarea::placeholder {
+            align-content: center;
+            padding: 20px 30px;
+        }
+
+
+        .sendmessage button {
+            width: 556px;
+            height: 68px;
+            background-color: #191A23;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .fcol2 img {
+            width: 370px;
+            height: 648px;
+            object-fit: cover;
+            object-position: left;
+
+        }
+
+
+
+
+        /* page7-start */
+
+
+        /* footerrow-start */
+
+        .footer{
+            background-color: #000;
+        }
+
+        .footerrow {
+            justify-content: space-between;
+            margin-bottom: 66px;
+        }
+
+
+
+        .menu ul li {
+            width: 95px;
+            height: 23px;
+            text-align: center;
+        }
+
+        .menu {
+            flex-basis: 501px;
+
+        }
+
+        .social img {
+            margin-right: 10px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .social {
+            flex-basis: 150px;
+            justify-content: space-evenly;
+            align-content: center;
+            /* border: 3px solid yellow; */
+        }
+
+        .contact p,
+        .contact h4 {
+            margin-bottom: 20px;
+        }
+
+        .contact{
+            flex-basis: 486px;
+        }
+
+        a{
+            color: #fff;
+        }
+
+        .news{
+            width: 285px;
+            height: 67px;
+            /* border: white; */
+            border-radius: 20px;
+            
+        }
+
+        .suscribe{
+            flex-basis: 634px;
+            align-content: center;
+            /* border: 3px solid red; */
+            background-color: #292A32;
+            border-radius: 30px;
+           text-align: center;
+        }
+
+        .suscribebtn{
+            width: 249px;
+            height: 68px;
+            background-color: #B9FF66;
+            border-radius: 20px;
+        }
+
+        .footerrow2{
+            justify-content: space-evenly;
+            /* border: 3px solid greenyellow; */
+            padding-bottom: 50px;
+            border-bottom: 1px solid #fff;
+        }
+
+        .credits{
+            padding: 40px 60px ;
+            text-align: center;
+        }
+
+        .credits a{
+            margin-left: 20px;
+        }
+
+        .news{
+            background-color: #292A32;
+            border: 1px solid #fff;
+        }
+        
+        .logo{
+            align-content: center;
+        }
+
+        .contact h4{
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+
+
+        /* footer-end */
+
+
+
+
+        @media (max-width:768px) {
+            .container {
+                padding: 0px 0px;
+            }
+
+            .navrow {
+                display: none;
+            }
+
+          
+            .bars{
+                display: inline;
+            }
+
+            
+            
+
+        }
+
+        @media (max-width:1072px){
+              .nav2 {
+           
+            padding-left: 0px;
+           
+
+        }
+        }
+
+
+       
+    </style>
+
+</head>
+
+<body>
+
+    <!-- nav-start -->
+
+    <div class="navbar container">
+
+        <div class="row">
+
+            <div class="nav1">
+                <li> <img src="images/Frame 9.png" alt="" width="219px" height="56px">
+            </div>
+            </li>
+
+              <div class="bars"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></div>
+
+            <div class="nav2">
+
+              
+                <ul class="row navrow">
+                  
+                    <li class="nav">Services</li>
+                    <li class="nav">Use Cases</li>
+                    <li class="nav">Pricing</li>
+                    <li class="nav">Blog</li>
+                    <li class="nav"><button>Request a quote</button></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- nav-end -->
+
+
+    <!-- page1-start -->
+
+
+    <div class="page1 container">
+
+
+        <div class="row1 row">
+
+            <div class="col11">
+
+                <h1 class="bighead"> Navigating the digital landscape for success</h1>
+                <p class="medtext">Our digital marketing agency helps businesses grow and succeed online through a range
+                    of services including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="bookconsult">Book a consultation</button>
+            </div>
+
+            <div class="col12">
+
+                <img src="images/Illustration (4).png" alt="" width="100%">
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <!-- page1-end -->
+
+    <!-- companies-start -->
+
+    <div class="companies container">
+
+        <div class="crow row">
+            <img src="images/Company logo.png" alt="">
+            <img src="images/Company logo (1).png" alt="">
+            <img src="images/Company logo (2).png" alt="">
+            <img src="images/Company logo (3).png" alt="">
+            <img src="images/Company logo (4).png" alt="">
+            <img src="images/Company logo (5).png" alt="">
+            <img src="images/Company logo (6).png" alt="">
+        </div>
+    </div>
+
+    <!-- companies-end -->
+
+
+    <!-- page2-start -->
+
+    <div class="page2 container">
+
+        <div class="row21 row">
+
+            <div class="col21">
+                <h2 class="bigtext greenbg">Services</h2>
+            </div>
+            <div class="col22">
+                <p class="smalltext">At our digital marketing agency, we offer a range of services to help businesses
+                    grow and succeed online. These services include:</p>
+            </div>
+
+        </div>
+
+
+        <div class="row22 row">
+
+            <div class="card1">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markgreen">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card1 card2">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markwhite">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration (1).png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card1 card3">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markwhite">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration (2).png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="card1">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markgreen">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card1 card2">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markwhite">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration (1).png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card1 card3">
+
+                <div class="row cardrow">
+
+                    <div class="part1">
+
+                        <h3 class="h3text"><mark class="markwhite">Search engine optimisation</mark></h3>
+
+                        <img src="images/Link.png" alt="">
+                    </div>
+
+
+
+                    <div class="part2">
+                        <img src="images/Illustration (2).png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="thingscontainer">
+
+            <div class="things row">
+
+                <div class="thingstext">
+                    <h3 class="h3text">Let’s make things happen</h3>
+                    <p class="smalltext">Contact us today to learn more about how our digital marketing services can
+                        help your
+                        business grow and succeed online.</p>
+                    <button class="proposal whitetext">Get your proposal</button>
+                </div>
+
+                <div class="thingsimg">
+                    <img src="images/Frame 19.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- page2-end -->
+
+
+    <!-- page3-start -->
+
+
+
+    <div class="page3 container">
+
+
+
+        <div class="row3 row">
+
+
+            <div class="col21 col31">
+                <h2 class="bigtext greenbg col3head">Case Studies</h2>
+            </div>
+            <div class="col22 col32">
+                <p class="smalltext">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case
+                    Studies</p>
+            </div>
+
+
+        </div>
+
+        <div class="row32 row">
+
+            <div class="col33  rtborder">
+                <p class="smalltext">For a local restaurant, we implemented a targeted PPC campaign that resulted in a
+                    50% increase in website traffic and a 25% increase in sales.</p>
+                <img src="images/Link (1).png" alt="">
+            </div>
+
+            <div class="col33 rtborder">
+                <p class="smalltext">For a B2B software company, we developed an SEO strategy that resulted in a first
+                    page ranking for key keywords and a 200% increase in organic traffic.</p>
+                <img src="images/Link (1).png" alt="">
+            </div>
+
+            <div class="col33">
+                <p class="smalltext">For a national retail chain, we created a social media marketing campaign that
+                    increased followers by 25% and generated a 20% increase in online sales.</p>
+                <img src="images/Link (1).png" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- page3-end -->
+
+
+    <!-- page4-start -->
+
+    <div class="page4 container">
+
+        <div class="row41 row">
+
+            <div class="col21 col31 col4">
+                <h2 class="bigtext greenbg col3head">Working Process</h2>
+            </div>
+            <div class="col22 col32">
+                <p class="smalltext">Step-by-Step Guide to Achieving Your Business Goals</p>
+            </div>
+
+
+        </div>
+
+
+        <div class="row42">
+
+            <div class="col1 greenbg">
+                <div class="headno special">
+                    <span class="bighead">01</span>
+                    <div class="h3text">Consultation</div>
+                    <img class="minusbutton" src="images/Plus icon.png" alt="">
+                </div>
+
+                <div class="text4">
+                    <p class="smalltext">During the initial consultation, we will discuss your business goals and
+                        objectives, target audience, and current marketing efforts. This will allow us to understand
+                        your needs and tailor our services to best fit your requirements.
+                    </p>
+                </div>
+            </div>
+            <div class="col1">
+                <div class="headno">
+                    <span class="bighead">02</span>
+                    <div class="h3text">Research and Stratergy Devlopment</div>
+                    <img class="minusbutton" src="images/Plus icon (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="col1">
+                <div class="headno">
+                    <span class="bighead">03</span>
+                    <div class="h3text">Implementation</div>
+                    <img class="minusbutton" src="images/Plus icon (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="col1">
+                <div class="headno">
+                    <span class="bighead">04</span>
+                    <div class="h3text">Monitoring and Optimization</div>
+                    <img class="minusbutton" src="images/Plus icon (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="col1">
+                <div class="headno">
+                    <span class="bighead">05</span>
+                    <div class="h3text">Reporting and Communication</div>
+                    <img class="minusbutton" src="images/Plus icon (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="col1">
+                <div class="headno">
+                    <span class="bighead">06</span>
+                    <div class="h3text">Continual Improvement</div>
+                    <img class="minusbutton" src="images/Plus icon (1).png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- page4-end -->
+
+
+
+    <!-- page5-start -->
+
+
+    <div class="page5 container">
+
+        <div class="row5">
+
+            <div class="col51 row">
+
+                <div class="col21 col511">
+                    <h2 class="bigtext greenbg col3head">Team</h2>
+                </div>
+                <div class="col22 col32">
+                    <p class="smalltext">Step-by-Step Guide to Achieving Your Business Goals</p>
+                </div>
+
+            </div>
+
+
+            <div class="col52 row">
+
+                <div class="col521">
+                    <div class="first row">
+
+                        <img class="photo" src="images/Picture.png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+
+                        <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+                </div>
+
+                <div class="col521">
+
+                    <div class="first row">
+                        <img src="images/Picture (2).png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <p>7+ years of experience in project management and team leadership. Strong organizational and
+                            communication skills</p>
+                    </div>
+
+                </div>
+
+                <div class="col521">
+
+                    <div class="first row">
+                        <img src="images/Picture (3).png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+
+                </div>
+
+                <div class="col521">
+
+                    <div class="first row">
+                        <img src="images/Picture (4).png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+
+                </div>
+
+                <div class="col521">
+
+                    <div class="first row">
+                        <img src="images/Picture (5).png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+
+                </div>
+
+                <div class="col521">
+
+                    <div class="first row">
+                        <img src="images/Picture (6).png" alt="">
+                        <div class="text5">
+                            <img class="lin" src="images/Social icon.png" alt="" width="34px" height="34px">
+                            <h4 class="medtext">John Smith</h4>
+                            <span class="smalltext">CEO and Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row5b">
+                <button class="proposal whitetext seeteam"><span class="medtext">See all team</span></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- page5-end -->
+
+
+
+    <!-- page6-start -->
+
+    <div class="page6 container">
+
+        <div class="row61 row">
+
+            <div class="col21 col611">
+                <h2 class="bigtext greenbg col6head">Testimonials</h2>
+            </div>
+            <div class="col22 col32">
+                <p class="smalltext">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our
+                    Digital Marketing Services</p>
+            </div>
+
+        </div>
+
+        <div class="reviews">
+
+            <img src="images/Testimonials.png" alt="">
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- page6-end -->
+
+
+
+
+    <!-- page7-start -->
+
+    <div class="page7 container">
+
+        <div class="contactus row">
+
+            <div class="col21 col61">
+                <h2 class="bigtext greenbg">Contact Us</h2>
+            </div>
+            <div class="col22 col62">
+                <p class="smalltext">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="form row">
+
+            <div class="fcol1">
+                <div class="radioip"> <input type="radio" checked name="a">Say Hi<input class="gap" type="radio"
+                        name="a"> Get a Quote</div>
+
+                <p>name</p>
+                <input class="textip" type="text" placeholder="Name">
+
+                <p>Email*</p>
+                <input class="textip" type="text" placeholder="Email">
+
+                <p>message*</p>
+                <textarea name="" id="" rows="10" cols="50%" placeholder="Message"></textarea>
+
+                <div class="sendmessage"> <button class="medtext">Send Message</button></div>
+
+            </div>
+
+
+            <div class="fcol2">
+
+                <img src="images/Illustration (5).png" alt="">
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- page7-end -->
+
+
+    <!-- footer-start -->
+
+
+    <div class="footer container">
+
+
+        <div class="footerrow row">
+
+            <div class="logo"><img src="images/Logo.png" alt="" width="180px" height="29px"></div>
+
+            <div class="menu">
+                <ul class="row">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Servies</a></li>
+                    <li><a href="">Use Cases</a></li>
+                    <li><a href="">Picing</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <img src="images/Social icon (1).png" alt="">
+                <img src="images/Social icon (2).png" alt="">
+                <img src="images/Social icon (3).png" alt="">
+            </div>
+
+        </div>
+
+        <div class="footerrow2 row">
+
+
+            <div class="contact whitetext">
+
+                <h4 class="medtext greenbg inlineblock">Contact Us</h4>
+                <p>Email: info@positivus.com</p>
+                <p>Phone: 555-567-8901</p>
+                <p>Address: 1234 Main St
+                    Moonstone City, Stardust State 12345</p>
+            </div>
+
+            <div class="suscribe">
+
+                <input class="news" type="text" placeholder="Email"> <button class="suscribebtn medtext">Suscribe to news</button>
+
+            </div>
+        </div>
+
+        <div class="credits">
+            <p class="inlineblock whitetext">© 2023 Positivus. All Rights Reserved.</p> <a href="">Privacy Policy</a>
+        </div>
+
+    </div>
+
+
+    <!-- .footer-end -->
+
+</body>
+
+</html>

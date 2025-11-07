@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+            /* background-color: #000; */
+            /* border: 3px solid red; */
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #2d3436;
+            font-weight: 700;
+            font-family: "Poppins";
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #2d3436;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 21px;
+
+            color: #151515;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            color: #2d3436;
+            font-weight: 400;
+        }
+
+        .container {
+            padding: 0px 150px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .whitext {
+            color: #fff;
+        }
+
+        .orangetext {
+            color: #ef8b59;
+        }
+
+
+
+        /* header-start */
+
+
+        .rowh {
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .colh1,
+        .colh2,
+        .colh3 {
+            align-content: center;
+            height: 85px;
+        }
+
+
+
+        .colh1 {
+            width: 274px;
+
+            background-color: #ef8b59;
+
+        }
+
+        .colh2 {
+            flex-basis: 690px;
+
+        }
+
+        .colh2 ul li {
+            height: 85px;
+            align-content: center;
+            width: 113px;
+        }
+
+        .colh3 {
+            flex-basis: 113px;
+            justify-content: space-between;
+            /* margin-left: 230px;
+     */
+        }
+
+        .colh3 i {
+            padding: 40px 5px;
+        }
+
+
+
+        /* header-end */
+
+        /* page1-start */
+
+        .page1 {
+            background: url(img/BG.png);
+            position: relative;
+            overflow: hidden;
+            z-index: -2;
+            padding: 120px 150px;
+            margin-bottom: 100px;
+        }
+
+
+
+        .Shape {
+            position: absolute;
+            right: -40px;
+            top: 110px;
+            z-index: -1;
+        }
+
+
+
+
+        .shopnow {
+            width: 211px;
+            height: 46px;
+            border-radius: 10px;
+            background-color: #ef8b59;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            border: none;
+        }
+
+        .col11 {
+            flex-basis: 480px;
+            align-items: center;
+            padding: 50px 0px;
+        }
+
+        .col12 {
+            /* background:url(img/Shape\ 1.png); */
+            align-items: center;
+            margin-top: 50px;
+
+
+        }
+
+        .col12 img {
+            margin-top: 100px;
+            margin-left: 140px;
+        }
+
+
+
+
+
+        /* page1-end */
+
+
+        /* page2-start */
+
+        .page2 {
+            background-color: #fafafa;
+            margin-bottom: 100px;
+
+        }
+
+
+
+        .p2 {
+            font-size: 18px;
+            color: #a3a3a3;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+
+        .row21 {
+            text-align: center;
+            padding: 30px 0px;
+            padding-bottom: 50px;
+        }
+
+        .row22 {
+            justify-content: space-between;
+            padding-bottom: 100px;
+
+        }
+
+        .col2 {
+            flex-basis: 260px;
+            justify-content: space-between;
+        }
+
+        .col2 *{
+            padding: 10px 0px;
+        }
+
+
+
+        .card2 {
+            background-color: #fff;
+            width: 300px;
+
+        }
+
+        .hprice {
+            font-size: 15px;
+            color: #a3a3a3;
+            font-weight: 400;
+            border-bottom: 1px solid #a3a3a3;
+        }
+
+        .oprice {
+            font-size: 17px;
+            color: #ef8b59;
+            font-weight: 600;
+        }
+
+        .col2img1,
+        .col2img2,
+        .col2img3,
+        .col2img4 {
+            width:100%;
+            height: 242px;
+            
+           
+
+
+        }
+
+        .col2img1 {
+            background: url(img/IMG.png);
+
+        }
+
+        .col2img2 {
+            background: url(img/IMG\ \(2\).png);
+
+        }
+
+        .col2img3 {
+            background: url(img/IMG\ \(3\).png);
+
+        }
+
+        .col2img4 {
+            background: url(img/IMG\ \(4\).png);
+
+        }
+
+
+        .sale {
+            font-size: 14px;
+            line-height: 12px;
+            color: #ffffff;
+            font-weight: 500;
+            width: 65px;
+            height: 25px;
+            background-color: #ef8b59;
+            margin-left: 70%;
+            margin-top: 10px;
+        }
+
+
+        .col2 img {
+            border-radius: 20px 20px 0px 0px;
+            width: 100%;
+        }
+
+
+
+        /* page2-start */
+
+
+        /* page3-start */
+
+        .page3 {
+            margin-bottom: 100px;
+            background-color: #f9f3eb;
+        }
+
+
+        .row3 {
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .col31,
+        .col32 {
+
+            flex-basis: 400px;
+
+        }
+
+        .col32 img,
+        .col31 img {
+            margin: 10px;
+        }
+
+
+
+
+        /* page3-end */
+
+
+
+        /* page4-start */
+
+
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            padding: 16px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+
+        }
+
+        .col53 {
+            padding: 50px;
+            border: 10px solid gold;
+        }
+
+        .col52{
+            
+            padding: 40px;
+        }
+
+
+        .col52 p {
+            padding: 20px;
+
+
+        }
+
+
+
+
+
+
+        /* page4-end */
+
+        /* page5-start */
+
+
+        .page5 {
+            margin-bottom: 100px;
+        }
+
+
+
+        .h5text {
+            /* border: 3px solid green; */
+            font-size: 36px;
+            letter-spacing: 1px;
+            line-height: 95px;
+            color: #ffffff;
+            font-weight: 600;
+
+        }
+
+        .col51 {
+            width: 960px;
+            /* border: 3px solid magenta; */
+        }
+
+        .col51 img {
+            width: 100%;
+            height: 100%;
+
+
+        }
+
+        .col52 {
+            
+            background-color: #ef8b59;
+            flex-basis: 700px;
+            flex-grow: 1;
+        }
+
+
+
+
+
+
+
+        /* page5-end */
+
+
+
+        .col6 img {
+            width: 100%;
+            border-radius: 0px;
+            margin-bottom: 30px;
+        }
+
+        .card6 {
+            width: 363px;
+        }
+
+
+        .bordertop {
+            border-top: 1px solid #000;
+            padding: 10px 0px;
+            margin-top: 10px;
+        }
+
+
+        .circleimg {
+            height: 50px;
+            width: 50px;
+            border: 3px solid green;
+
+        }
+
+
+
+        /* page7-start */
+
+        .page7 {
+            background-color: #fafafa;
+        }
+
+        .row72 {
+            justify-content: space-between;
+            margin-top: 240px;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding-bottom: 100px;
+        }
+
+
+        .col71 {
+            background-color: #fff;
+            flex-basis: 495px;
+            padding: 50px;
+
+        }
+
+        .col71 p {
+            padding: 35px 0px;
+        }
+
+
+
+        .top {
+
+            width: 495px;
+            position: absolute;
+            background-color: #ef8b59;
+            top: -180px;
+            left: 50%;
+            transform: translate(-50%, 0)
+        }
+
+        .rown {
+            text-align: center;
+            padding-bottom: 125px;
+        }
+
+        .rown input {
+            width: 580px;
+            height: 60px;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        .rown button {
+            width: 153px;
+            height: 60px;
+            border-radius: 0px 20px 20px 0px;
+            background-color: #000;
+            color: #fff;
+        }
+
+
+
+        /* page7-end */
+
+        /* footer-start */
+
+        .footer {
+            background-color: #f9f3eb;
+            padding: 100px 150px;
+        }
+        
+        .frow1{
+            justify-content: space-between;
+        }
+
+        .fcol1 {
+            flex-basis: 380px;
+        }
+
+        .fcol1 img {
+
+            width: 150px;
+            height: 30px;
+            margin-bottom: 30px;
+        }
+
+        .fcol1 p {
+            margin-bottom: 30px;
+        }
+
+        .fcol1 i {
+            margin-right: 10px;
+        }
+
+
+        .fcol2 h3,.fcol3 h3, .fcol4 h3 {
+            margin-bottom: 48px;
+        }
+
+        .fcol2 p ,.fcol3 p, .fcol4 p{
+            padding: 10px 0px;
+        }
+
+        .fcol2{
+            flex-basis: 300px;
+        }
+
+        .fcol3, .fcol4{
+            flex-basis: 180px;
+        }
+
+
+        /* footer-end */
+
+
+        @media(max-width:1107px) {
+
+            .container {
+                padding: 0px;
+            }
+
+            .colh3 {
+
+                margin-left: 230px;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header-start -->
+
+    <div class="header container">
+
+        <div class="row rowh">
+
+            <div class="colh1 whitext">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                Category
+                <i class="fa-solid fa-arrow-down fa-2xl" style="color: #ffffff;"></i>
+
+            </div>
+
+            <div class="colh2">
+                <ul class="row">
+                    <li>HOME <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></li>
+                    <li>FEATURED <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></li>
+                    <li>SHOP <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></li>
+                    <li>BLOG <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+
+            <div class="colh3 row">
+                <i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i> <i
+                    class="fa-solid fa-basket-shopping fa-2xl" style="color: #000000;"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- header-end -->
+
+    <!-- page1-start -->
+
+    <div class="page1 container">
+
+        <img class="Shape" src="img/Shape 1.png" alt="">
+
+        <div class="row1 row">
+
+            <div class="col11">
+                <h1>Best Design of Furniture Collection</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quasi, sequi cumque autem veritatis
+                    fugit, pariatur rem omnis iure sunt exercitationem aperiam doloribus reiciendis voluptate minus
+                    dolore vitae quia placeat?</p>
+                <button class="shopnow">Shop Now</button>
+            </div>
+
+            <div class="col12">
+
+                <img src="img/Layer 1.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- page1-end -->
+
+
+    <!-- page2-start -->
+
+    <div class="page2 container">
+
+
+       
+
+        <div class="row22 row">
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <div class="col2img1"> <button class="sale">SALE</button></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+
+                    <span class="hprice"></span>
+                    <span class="oprice">$35</span>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <div class="col2img2"> <button class="sale">SALE</button></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <div class="col2img3"> <button class="sale">SALE</button></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <div class="col2img4"> <button class="sale">SALE</button></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- page2-end -->
+
+
+
+    <!-- .page3-start -->
+
+
+    <div class="page3 container">
+
+        <div class="row3 row">
+
+            <div class="col31"><img src="img/1.png" alt="">
+
+                <img src="img/3.png" alt="" width="245px" height="269px">
+                <img src="img/4.png" alt="" width="245px" height="269px">
+            </div>
+
+            <div class="col32">
+
+                <img src="img/4 (1).png" alt="" width="245px" height="269px">
+                <img src="img/5.png" alt="" width="245px" height="269px">
+                <img src="img/6.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- page3-end -->
+
+
+    <!-- .page4-start -->
+
+    <div class="page2  container">
+
+
+        <div class="row21">
+            <h2>Top products</h2>
+
+            <p class="p2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt quisquam earum dolorum
+                dolore hic, eaque optio id! Ratione obcaecati asperiores ipsam quod cumque aliquam deleniti neque nobis
+                nisi vel!
+            </p>
+
+        </div>
+
+        <div class="row22 row">
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <img src="img/IMG (5).png" alt=""><br>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <img src="img/IMG (6).png" alt=""><br>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <img src="img/IMG (7).png" alt=""><br>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="card2">
+
+                <div class="col2">
+
+                    <img src="img/IMG (8).png" alt=""><br>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+
+                    <div class="p2">(0 Reviews)</div>
+
+                    <p>Decor For Drowing</p>
+
+                    <span class="hprice">$50</span>
+                    <span class="oprice">$35</span>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- .page4-end -->
+
+
+    <!-- page5-end -->
+
+    <div class="page5">
+
+        <div class="row5 row">
+
+            <div class="col51">
+                <img src="img/IMG (9).png" alt="">
+            </div>
+
+            <div class="col52">
+
+                <span class="h5text">Modernliving quarters</span>
+
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    in maximus odio eu elementum fringilla, Mauris sodales
+                    vel ipsum a laoreet.
+                </p>
+
+
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    in maximus odio eu elementum fringilla, Mauris sodales
+                    vel ipsum a laoreet
+
+                </p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- page5-end -->
+
+
+
+
+    <!-- page6-start -->
+
+
+    <div class="page2 page6 container">
+
+
+        <div class="row21">
+            <h2>Top products</h2>
+
+            <p class="p2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt quisquam earum dolorum
+                dolore hic, eaque optio id! Ratione obcaecati asperiores ipsam quod cumque aliquam deleniti neque nobis
+                nisi vel!
+            </p>
+
+
+
+        </div>
+
+        <div class="row22 row">
+
+            <div class="card2 card6">
+
+                <div class="col2 col6">
+
+                    <img src="img/IMG (10).png" alt=""><br>
+                    <!-- <img class="circleimg"  src="img/Ellipse 1.png" alt="" > -->
+
+                    <h3>HERE WILL BE TITLE</h3v>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid beatae soluta,
+                            nesciunt nihil architecto dicta laboriosam assumenda, nisi voluptatem quam vel possimus
+                            animi, magnam officia quidem voluptatum quos labore.</p>
+
+                        <p class="orangetext bordertop">READ MORE</p>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="card2 card6">
+
+                <div class="col2 col6">
+
+                    <img src="img/IMG (11).png" alt=""><br>
+
+                    <h3>HERE WILL BE TITLE</h3v>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid beatae soluta,
+                            nesciunt nihil architecto dicta laboriosam assumenda, nisi voluptatem quam vel possimus
+                            animi, magnam officia quidem voluptatum quos labore.</p>
+
+                        <p class="orangetext bordertop">READ MORE</p>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="card2 card6">
+
+                <div class="col2 col6">
+
+                    <img src="img/IMG (12).png" alt=""><br>
+
+
+                    <h3>HERE WILL BE TITLE</h3v>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid beatae soluta,
+                            nesciunt nihil architecto dicta laboriosam assumenda, nisi voluptatem quam vel possimus
+                            animi, magnam officia quidem voluptatum quos labore.</p>
+
+                        <p class="orangetext bordertop">READ MORE</p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- page6-end -->
+
+
+    <!-- page7-start -->
+
+    <div class="page7 container">
+
+
+        <div class="row21 row71">
+            <h2>Latest News</h2>
+
+            <p class="p2">
+                Praesent ut ligula non mi curabitur at lacus elit
+            </p>
+
+
+
+        </div>
+
+
+
+        <div class="row72 row">
+
+
+            <div class="col71">
+
+                <img src="img/“ (1).png" alt="">
+                <p>It is a long established fact that a
+                    reader will be distracted by the
+                    readable content of a page when
+                    looking at its layout.</p>
+            </div>
+
+
+            <div class="col71 top">
+                <img src="img/“.png" alt="">
+                <p>It is a long established fact that a
+                    reader will be distracted by the
+                    readable content of a page when
+                    looking at its layout.</p>
+            </div>
+
+
+            <div class="col71">
+                <img src="img/“ (1).png" alt="">
+                <p>It is a long established fact that a
+                    reader will be distracted by the
+                    readable content of a page when
+                    looking at its layout.</p>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="row21 row71">
+            <h2>Latest News</h2>
+
+            <p class="p2">
+                Praesent ut ligula non mi curabitur at lacus elit
+            </p>
+
+
+
+        </div>
+
+        <div class="rown">
+
+            <input type="text"><button>Search</button>
+        </div>
+
+
+    </div>
+
+
+    <!-- page7-end -->
+
+
+    <!-- footer-start -->
+
+    <div class="footer container">
+
+        <div class="frow1 row">
+
+
+
+            <div class="fcol1">
+                <img src="img/Logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa animi maiores quasi quae facere
+                    suscipit ratione, ipsam harum recusandae quaerat facilis tenetur et tempore reiciendis iure autem
+                    nobis sit quibusdam.</p>
+
+                <i class="fa-brands fa-google-plus-g fa-xl" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i>
+                <i class="fa-brands fa-facebook-f fa-lg" style="color: #000000;"></i>
+                <i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i>
+
+            </div>
+
+            <div class="fcol2">
+
+                <h3>Contact Us</h3>
+
+                <p>1203, Dhanmondi, Drive FL 3344
+                    Bangladesh, Dhaka</p>
+
+                <p>Phone: 0123 456 789</p>
+                <p> Email: Info@example.com</p>
+
+            </div>
+
+            <div class="fcol3">
+
+                <h3>Recent Post</h3>
+
+                <p>Best caring Doctors</p>
+                <p>The Blood Sample</p>
+                <p>The ent sample</p>
+
+            </div>
+
+
+            <div class="fcol4">
+
+                <h3>Our Portfolio</h3>
+
+                <p>plastic machine</p>
+                <p>celcius meter</p>
+                <p>Pedometer</p>
+                <p>smart mask</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- footer-end -->
+
+
+
+</body>
+
+</html>
